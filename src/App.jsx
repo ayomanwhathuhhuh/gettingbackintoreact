@@ -8,11 +8,11 @@ function App() {
 
   return (
     <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <div className='navbar'>
+        <button>Menu?</button>
+        <div className='Cash Reserve'>
+              1/1000
+        </div>
       </div>
     </>
   )
