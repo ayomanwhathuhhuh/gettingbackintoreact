@@ -5,7 +5,13 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  function blah() {
+    console.log("hi");
+    return 0;
+  }
+  function blah2() {
+    console.log("bye")
+  }
   return (
     <>
       <div className='Navbar'>
@@ -15,10 +21,16 @@ function App() {
           <div className='MenuLine3'></div>
         </button>
         <div className='AllCashStats'>
-          <div className='CashLabel'>$500</div>
-          <div className='CashReserve'>
+          <div className='CashLabel'>+$500</div>
+          <div className='CashReserve' onMouseEnter={blah} onMouseLeave={blah2}>
             <div className='FillPercentage'></div>
           </div>
+        </div>
+      </div>
+      <div className='Tooltips'>
+        <div className='CashReserveTooltip'>
+          <first>1000/500</first>
+          <second>(10%)</second>
         </div>
       </div>
     </>
