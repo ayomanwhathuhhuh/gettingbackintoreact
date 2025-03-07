@@ -5,8 +5,11 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  document.addEventListener("mousemove",(mv)=>{
+  })
+
   function blah() {
-    console.log("hi");
+    
     return 0;
   }
   function blah2() {
@@ -29,8 +32,8 @@ function App() {
       </div>
       <div className='Tooltips'>
         <div className='CashReserveTooltip'>
-          <first>1000/500</first>
-          <second>(10%)</second>
+          <div>1000/500</div>
+          <div>(10%)</div>
         </div>
       </div>
     </>
